@@ -140,19 +140,23 @@ html, body {
   .header svg{
     display: none;
   }
+  .btn-box div{
+      width : 50%;
+      margin-bottom: 1rem;
+  }
   .btn-downloadnow{
     background-color: var(--primary-bluelight-color);
     color: white;
     border:1px solid white;
-    
+    line-height: 2.1rem;
    }
   
    .btn-watchvideo{
-       
+    background-color: var(--primary-bluelight-color);  
     display: inline-flex; /* make element size relative to content */
     align-items: center; /* vertical alignment of items */
-    line-height: 40px; /* vertically size by height, line-height or padding */
-   
+    line-height: 1rem; /* vertically size by height, line-height or padding */
+    justify-content: center;
    }
    a:hover{
    text-decoration: none;
@@ -204,6 +208,10 @@ html, body {
          .header svg{
             display: block;
           }
+          .btn-box div{
+            width : auto;
+            
+        }
   }
 
 
