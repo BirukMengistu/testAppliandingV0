@@ -26,3 +26,88 @@
 #features {
     background-color: #1487FD;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Features */ 
+#features {} 
+.feature-dots-grid { 
+    display: grid; grid-template-columns: repeat(9, 14); 
+    /* grid-template-rows: repeat(14); */ 
+    gap: 20px; 
+} 
+.feature-dot { 
+    background-color: var(--primary-lightgrey-color); 
+    height: 10px; 
+    width: 10px; 
+    border-radius: 50%; 
+    opacity: 16%; 
+}
