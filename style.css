@@ -116,21 +116,37 @@ html, body {
 }
 
 /* Features */ 
-#features {} 
-.feature-dots-grid { 
-  display: grid; 
-  grid-template-columns: repeat(9, 14); 
-  /* grid-template-rows: repeat(14); */ 
-  gap: 20px; 
-} 
-.feature-dot { 
-  background-color: var(--primary-lightgrey-color); 
-  height: 10px; 
-  width: 10px; 
-  border-radius: 50%; 
-  opacity: 16%; 
+#features p {
+  color: var(--primary-lightgrey-color);
 }
-
+#features h4, h1 {
+  font-weight: 750;
+}
+.features-main {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.features-grid {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  margin-top: 3rem;
+  grid-gap: 30px 70px;
+}
+.features-top-sign {
+  background-color: rgb(255, 187, 0, 0.2);
+  padding: .5rem 1rem;
+  border-radius: 7px;
+}
+.features-sign {
+  background-color: rgb(255, 187, 0, 0.2);
+  padding: 1rem 1rem;
+  border-radius: 8px;
+}
+.features-text {
+  color: var(--primary-yellow-color);
+}
  
   @media (min-width: 720px) {
     .container{
