@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="carousel.css" />
-    <script src="carousel.js"></script>
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <title>App Landing</title>
+
 </head>
 <body>
     <nav class="navbar">
@@ -68,57 +67,62 @@
         </section>
         <section id="features"></section>
         
-
+        
         <!-- Fredrik -->
         <section id="screens">
-            <div class="container-carousel">
-                <div id="text-carousel">
-                    <h1 id="h1-carousel"> Application Screens</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    <br>Lorem Ipsum has been the industry's</p>
-                </div>
-        <!-- Carousel -->
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                  </ol>
+          <div class="container-carousel">
+            <div id="text-carousel">
+              <h1 id="h1-carousel"> Application Screens</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <p>Lorem Ipsum has been the industry's</p>
+            </div>
+            
+            <!-- Carousel -->
+            <!-- Swiper -->
+            
+            <div class="swiper">
 
-            <!-- Wrappers -->
-                  <div class="carousel-inner">
-                    <div class="item-active">
-                      <img src="img/carousel/iPhone X - Light.png" alt="centerPhone">
-                    </div>
-                    <div class="item-active">
-                      <img src="img/carousel/iPhone X - Light.png" alt="1phone">
-                    </div>
-                    <div class="item-active">
-                      <img src="img/carousel/iPhone X - Light.png" alt="2phone">
-                    </div>
-                    <div class="item-active">
-                      <img src="img/carousel/iPhone X - Light.png" alt="3phone">
-                    </div>
-                    <div class="item-active">
-                      <img src="img/carousel/iPhone X - Light.png" alt="4phone">
-                    </div>
-                    <div class="item-active">
-                      <img src="img/carousel/iPhone X - Light.png" alt="5phone">
-                    </div>
-                    <a class="left carousel-control" href="#myCarousel" data-slide="prev"></a>
+              <div class="swiper mySwiper" data-aos="fade-up" data-aos-offset="400">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/carousel/iPhone X - Light.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/carousel/iPhone X - Light.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/carousel/iPhone X - Light.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/carousel/iPhone X - Light.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/carousel/iPhone X - Light.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/carousel/iPhone X - Light.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/carousel/iPhone X - Light.png" />
                   </div>
                 </div>
-                <!-- Statistics  -->
-
-                <div class="stats">
-<!--                 <div class="bg-img">
-                  <img src="img/carousel/Layer 815.png" alt="">
-                </div> -->
+              </div>
+            </div>
+            </div>
+          
+            
+            
+              
+              
+              <!-- Statistics  -->
+              
+              <div class="stats">
                 <div class="text-stats">
                   <h1> Application Statistics</h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p> Lorem Ipsum has been the industry's</p>
                 </div>
+                <!-- <img class="bg-img" src="img/carousel/Layer 815.png" alt=""> -->
                 <div class="grid-container">
                   <div>
                     <h1>+1430</h1>
@@ -140,11 +144,20 @@
                 </div>
               </div>
             
-        </section>
+            
+          </div>
+          </section>
+          
+          <section id="hero"></section>
+          <section id="contactus"></section>
+          <section id="footer"></section>
+        </div>
+        
+        
 
-        <section id="hero"></section>
-        <section id="contactus"></section>
-        <section id="footer"></section>
-    </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="scripts.js"></script>
+        <!-- Initialize Swiper -->
+
 </body>
 </html>

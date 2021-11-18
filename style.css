@@ -125,7 +125,7 @@ html, body {
 
 
 .container-carousel{
-  width: 80%;
+  max-width: 80%;
   padding-top: 3rem;
   padding-bottom: 5rem;
   margin: auto;
@@ -135,27 +135,69 @@ html, body {
 #text-carousel h1{
   text-align: center;
   font-weight:bolder;
-  font-size: 40px;
+  font-size: 30px;
 }
 #text-carousel p{
   color: #8A8A8A;
   text-align: center;
-  font-size: 16px;
+  font-size: 15px;
+
+
+}
+/* Swiper */
+
+
+/* .swiper {
+  width: 100%;
+  height: 100%;
+
+} */
+
+
+
+.swiper-slide {
+  background-position: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 45px 30px !important;
+  
+
+  /* Center slide text vertically */
+
+
 }
 
-.stats{
-  width: 80%;
-  padding-top: 3rem;
-  padding-bottom: 5rem;
-  margin: auto;
-  background-image: url(img/carousel/Layer\ 815.png);
-  background-repeat: no-repeat;
+.swiper-slide img {
+  display: block;
+  max-height: 350px;
+ /*  max-width: 100px; */
+  transition: transform 100ms ease;
+}
+.active-slide img {
+  transform: scale(1.2);
+  text-align: center;
+}
+/* Swiper -end */
 
-  
+
+
+
+.stats{
+  display: block;
+  width: 80%;
+  padding-bottom: 2rem;
+  margin: auto;
+
+  background-image: url('img/carousel/Layer\ 815.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 
 .text-stats{
+  
   justify-content: space-between;
   /* justify-content: center; */
   align-items: center;
@@ -164,34 +206,45 @@ html, body {
 .text-stats h1{
   text-align: center;
   font-weight:bolder;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 
 .text-stats p{
   color: #8A8A8A;
   text-align: center;
-
-  font-size: 16px;
+  
+  
+  font-size: 15px;
 }
 
+/* .bg-img{
+  position:absolute;
+  z-index: -1;
+  
+  border: 1px solid black;
+} */
 .grid-container{
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 10px;
-  text-align: center;
+  
+  grid-template-columns: 100px  100px  100px  100px;
+  grid-gap: 10%;
+  align-items: center;
+  justify-content: center;
+ 
 }
 
 .grid-container h1{
-  font-size: 40px;
+  display: grid;
+  margin: auto;
+  font-size: 30px;
   font-weight: bold;
   color:#3096FE ;
 }
 
 .grid-container p{
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
-
   color: #333333;
 
 }
@@ -207,6 +260,7 @@ html, body {
     .container{
         width: 720%;
     }
+
   }
   
   @media (min-width: 905px) {
