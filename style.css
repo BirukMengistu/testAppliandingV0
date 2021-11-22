@@ -121,20 +121,22 @@ html, body {
   margin: auto;
   margin-top: 4em;
   display: flex;
-  
-  /* justify-content: space-between; */
 }
+.container-logo {
+  justify-content: space-between;
+}
+
 .ec-logo {
   /* flex: 25%; */
   padding-right: 2em;
-
 }
+
 .img-ec-logo {
   max-width:100%;
   height:auto;
   max-height:100%;
  }
- .iphone-container {
+ /* .iphone-container {
    
    height: auto;
    padding: 0rem;
@@ -149,36 +151,40 @@ html, body {
   z-index: 1;
   top: -20px;
   left: 140px;
-}
+} */
 
+/* .iphone-bg {
+  background-image: url("/img/bg.png");
+} */
 
 .iphone-bg {
-  /* position: absolute; */
   background-image: url("/img/bg.png");
-  background-repeat: no-repeat;
-  background-position: 0px 30px;
-  background-size: auto;
-  text-align: left;
-  border: solid green;
-  padding-left: 146px;
-  padding-right: 146px;
-  margin-left: -146px;
-  overflow-x: none;
-  
-}
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: 25rem;
+  text-align: center;
+  padding-left: 7.1rem;
+  padding-right: 7.1rem;
+  margin-left: -7.1rem; 
+ }
+ .iphone-bg img {
+  height: 25rem;
+ }
+/* .aboutus-grid {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+} */
 
-.iphone {
+
+/* .iphone {
   
   z-index: 1;
-}
-.iphone img {
-  width: 10em;
-  padding-right: 200px;
-}
+} */
+
 
   
 
-.image1 {
+/* .image1 {
   position: relative;
   top: 10;
   left: 0;
@@ -188,8 +194,52 @@ html, body {
   position: absolute;
   top: 0px;
   left: 0px;
+} */
+.aboutus-container {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: left;
+  margin-left: 10rem;
+  
+} 
+
+.aboutus-title {
+  width: fit-content;
+  border-radius: .5rem;
+  background-color: #fad5a43a;
+  color: var(--primary-yellow-color);
+}
+.aboutus-title h2 {
+  padding: .5rem 1rem 0.5rem 1rem;
+  font-size: 1rem;
+}
+.aboutus-container h1 {
+  font-weight: 700;
 }
 
+.aboutus-inlineblock {
+  display: inline-block;
+}
+.aboutus-container p {
+  color: #8A8A8A;
+}
+
+@media (max-width: 1018px) {
+  .ec-logo4 {
+    display: none;
+  }
+  
+  }
+  @media (max-width: 750px) {
+    .ec-logo3 {
+      display: none;
+    }
+    .ec-logo {
+      justify-content: center;
+      align-items: center;
+    }
+  }
 
 /* END ABOUT US   */
  
@@ -224,6 +274,7 @@ html, body {
       .btn {
         width: auto;
       }
+     
   }
  
   @media (min-width: 1200px) {
@@ -232,18 +283,3 @@ html, body {
     }
   }
 
-<<<<<<< HEAD
-  
-  
-=======
- body{
-     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- }
-.container
-{
-  width: 100%;
-}
-#features {
-    background-color: #1487FD;
-}
->>>>>>> c49f0f261896a78e1ee44552d0c129591ab0e5f7
