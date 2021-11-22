@@ -96,11 +96,58 @@ html, body {
 
   }
   .fa-play-circle{
+      position: relative;
       background-color: wheat;
       color: var(--primary-yellow-color);
       border-radius: 50px;
+      z-index: 2;
+  }
+  .spinner-container {
+    position: relative;
+    right: 11.5px;
+    bottom: 45px;
+    z-index: 1;
+  }
+  
+  .circle {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-yellow-color);
+    position: absolute;
 
   }
+  
+  .animate {
+    animation-name: ripple;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+  }
+  #c1 {
+    animation-delay: 0s;
+  }
+  #c2 {
+    animation-delay: 1s;
+  }
+  #c3 {
+    animation-delay: 2s;
+  }
+  
+  
+  @keyframes ripple {
+    from {
+      transform: scale(0);
+      opacity: 1;
+    }
+    to{
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+ 
+
   .header .heard-card{
       color: white;
       width:40%;
