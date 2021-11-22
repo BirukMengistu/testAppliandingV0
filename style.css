@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@
 
   
 html, body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', serif;
     line-height: 1.5;
   }
   
@@ -95,6 +95,7 @@ html, body {
       align-items: center;
 
   }
+  
   .fa-play-circle{
       position: relative;
       background-color: wheat;
@@ -102,6 +103,8 @@ html, body {
       border-radius: 50px;
       z-index: 2;
   }
+
+  /*  ANIMATION_START - Fredrik */
   .spinner-container {
     position: relative;
     right: 11.5px;
@@ -146,6 +149,7 @@ html, body {
       opacity: 0;
     }
   }
+  /* ANIMATION_END - Fredrik */
  
 
   .header .heard-card{
@@ -331,6 +335,71 @@ html, body {
 
 /* Carousel -end - Fredrik */
 
+
+
+
+
+
+/* FOOTER - FREDRIK */
+#footer{
+  position: relative;
+  background-image: url('img/footer/Rectangle\ 1915.png');
+  height: 200px;
+
+}
+#footer h1{
+
+  color: #FFF;
+  font-weight: bolder;
+  font-size: 41px;
+  display: flex;
+ padding-top:  2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer span{
+  color: var(--primary-yellow-color);
+}
+.foot-bg{
+  position: absolute;
+  top: 0%;
+}
+.foot-bg img{
+  overflow: hidden;
+  border-image-repeat: no-repeat;
+}
+
+
+.footer-nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px ;
+  list-style: none;
+}
+.footer-nav a{
+  color: white;
+  margin: 0 15px;
+}
+
+
+#footer .social-media{
+
+  /* width: 100%;  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  
+}
+#footer .social-media i{
+  padding: .5vh;
+  border-radius: 10px;
+  background-color: rgba(224, 255, 255, 0.185);
+  margin: 10px;
+  
+}
 
 
 
