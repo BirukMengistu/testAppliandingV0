@@ -160,12 +160,11 @@ html, body {
 .iphone-bg {
   background-image: url("/img/bg.png");
   background-repeat: no-repeat; 
-  background-position: center;
   background-size: 25rem;
   text-align: center;
-  padding-left: 7.1rem;
-  padding-right: 7.1rem;
-  margin-left: -7.1rem; 
+  padding-left: 6.9rem;
+  padding-right: 6.9rem;
+  margin-left: -6.9rem; 
  }
  .iphone-bg img {
   height: 25rem;
@@ -175,14 +174,10 @@ html, body {
   grid-template-columns: 1fr, 1fr;
 } */
 
-
 /* .iphone {
   
   z-index: 1;
 } */
-
-
-  
 
 /* .image1 {
   position: relative;
@@ -201,9 +196,7 @@ html, body {
   
   align-items: left;
   margin-left: 10rem;
-  
 } 
-
 .aboutus-title {
   width: fit-content;
   border-radius: .5rem;
