@@ -116,7 +116,7 @@ html, body {
     height: 54.9px;
     width: 55px;
     border-radius: 50%;
-    border: 8px solid  yellow;/* var(--primary-yellow-color); */
+    border: 8px solid  wheat;/* var(--primary-yellow-color); */
     position: absolute;
 
   }
@@ -231,7 +231,7 @@ html, body {
 
 
  .swiper {
-  width: 82vw;
+  width: 70vw;
   height: 100%;
 
 } 
@@ -344,6 +344,7 @@ html, body {
 /* FOOTER - FREDRIK */
 
 #footer{
+  margin-top:4rem ;
   position: relative;
   background-image: url('img/footer/Rectangle\ 1915.png');
   background-size: cover;
@@ -370,10 +371,11 @@ html, body {
   top: 0%;
 }
 .foot-bg img{
-  background-position: center center;
+/*   background-position: center center; */
   overflow:hidden;
   width: 100vw;
-  height: 100%;
+  height: 250px;
+  max-height: 100vw;
 
   border-image-repeat: no-repeat;
 

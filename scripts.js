@@ -14,16 +14,19 @@ var swiper = new Swiper(".mySwiper", {
     slideActiveClass: "active-slide",
     breakpoints: {
         0: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
         640: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       720: {
         slidesPerView: 3,
       },
       1200: {
         slidesPerView: 5,
+      },
+      1700: {
+        slidesPerView: 7,
       },
   
     }
