@@ -13,7 +13,7 @@ var swiper = new Swiper(".mySwiper", {
     // },
     slideActiveClass: "active-slide",
     breakpoints: {
-        100: {
+        0: {
         slidesPerView: 2,
       },
         640: {
