@@ -82,15 +82,21 @@ html, body {
     margin-left: 5%;
   }
   
-  .navbar .header {
-    width: 100%;
+ 
+  
+  .navbar .header{
+    position: relative;
+    z-index: 1;
+    color: white;
     display: flex;
-    justify-content: space-between;
-    align-content: center;
-    margin-left: 5%;
-  }
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    
+}
   .header-card{
-    width: 80%;
+  
     text-align: center;
     margin: 0 10%
   }
@@ -139,16 +145,7 @@ html, body {
       z-index: 1;
       margin: 0 auto;
         }
-        .navbar .header{
-            position: relative;
-            z-index: 1;
-            color: white;
-            width:80%;
-            justify-content: center;
-            align-items: center;
-            padding: 1rem 1rem;
-            
-        }
+     
         
   a {
     padding: 0 .5rem;
@@ -165,17 +162,18 @@ html, body {
  
       .header svg{
         display: none;
+        
         }
       .btn-box div{
-          
+            width:auto;
             margin-bottom: 1rem;
         }
 
       .btn-downloadnow{
-        background-color:  var(--primary-bluedark-color);
+        background-color: var(--primary-bluedark-color); 
         color: white;
         border:1px solid white;
-        line-height: 1.2rem;
+        line-height: 1.5rem;
       }
   
       .btn-watchvideo{
@@ -245,9 +243,10 @@ html, body {
   
   
   
-  
+ /* start contact section  */
   #contactus {
     width: 100%;
+    height: 50vh;
    display: flex;
    flex-direction:column;
    justify-content: center;
@@ -257,7 +256,6 @@ html, body {
   
   #contactus .contact-header{
      width:50%; 
-    
     }
   .form{
     width:60%;
@@ -287,6 +285,8 @@ html, body {
      border: none;
      overflow: auto;
      outline: none;
+     font-size: small;
+     border-radius: 6px;
      }
     .form button{
       width:20%;
