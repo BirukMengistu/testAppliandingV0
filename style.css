@@ -208,7 +208,7 @@ html, body {
 
 
 .container-carousel{
-  max-width: 80%;
+  max-width: 100%;
   padding-top: 3rem;
   padding-bottom: 5rem;
   margin: auto;
@@ -230,31 +230,35 @@ html, body {
 /* Swiper */
 
 
-/*  .swiper {
-  width: 80%;
+ .swiper {
+  width: 100%;
   height: 100%;
 
-}  */
+} 
 
 
 
 .swiper-slide {
   background-position: center;
   text-align: center;
-  width: 100%;
+  width: 80%;
   height: 100%;
   padding: 45px 30px !important;
 }
 
 .swiper-slide img {
   display: block;
+  align-items: center;
+  justify-content: center;
+
   max-height: 350px;
  /*  max-width: 100px; */
   transition: transform 100ms ease;
 }
 .active-slide img {
   transform: scale(1.2);
-  text-align: center;
+/*   text-align: center;
+  justify-content: center; */
 }
 /* Swiper_END--Fredrik--*/
 
@@ -339,6 +343,7 @@ html, body {
 #footer{
   position: relative;
   background-image: url('img/footer/Rectangle\ 1915.png');
+  background-size: cover;
   height: 250px;
 
 }
@@ -358,11 +363,16 @@ html, body {
 }
 .foot-bg{
   position: absolute;
+
   top: 0%;
 }
 .foot-bg img{
-  overflow: hidden;
+  background-position: center center;
+  /* overflow:hidden; */
+  width: 100vw;
+
   border-image-repeat: no-repeat;
+
 }
 
 
