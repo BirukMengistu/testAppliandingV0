@@ -116,7 +116,7 @@ html, body {
     height: 54.9px;
     width: 55px;
     border-radius: 50%;
-    border: 8px solid  wheat;/* var(--primary-yellow-color); */
+    border: 8px solid  wheat;
     position: absolute;
 
   }
