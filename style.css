@@ -629,7 +629,7 @@ html, body {
       display: block;
     }
     .swiper {
-      width: 100vw;
+      width: 80vw;
   }
   
   @media (min-width: 905px) {
