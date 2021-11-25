@@ -165,7 +165,9 @@ html, body {
         
         }
       .btn-box div{
-            width:auto;
+
+
+            align-items: center;
             margin-bottom: 1rem;
         }
 
@@ -174,6 +176,10 @@ html, body {
         color: white;
         border:1px solid white;
         line-height: 1.5rem;
+        /* height: 40px; */
+
+
+    
       }
   
       .btn-watchvideo{
