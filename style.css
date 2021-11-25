@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@
 
   
 html, body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', serif;
     line-height: 1.5;
   }
    
@@ -177,12 +177,13 @@ html, body {
       }
   
       .btn-watchvideo{
-       
+       position: absolute;
         background-color: var(--primary-bluedark-color);  
         display: inline-flex; /* make element size relative to content */
         align-items: center; /* vertical alignment of items */
         line-height: 1rem; /* vertically size by height, line-height or padding */
         justify-content: center;
+        z-index:1 ;
       }
       a:hover{
       text-decoration: none;
@@ -206,19 +207,21 @@ html, body {
   
   .spinner-container {
     position: relative;
-    right: 11.5px;
-    bottom: 45px;
-    z-index: 1;
+    right: 143px;
+    bottom: 22px;
+    z-index: -1;
+    
   }
   
- /*  .circle {
+  .circle {
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    border: 2px solid var(--primary-yellow-color);
+    border: 8px solid  wheat;
     position: absolute;
+    z-index: 1;
 
-  } */
+  }
   
   .animate {
     animation-name: ripple;
@@ -346,6 +349,7 @@ html, body {
       opacity: 0;
     }
   }
+  /* ANIMATION_END - Fredrik */
  
 
   .header .heard-card{
@@ -404,7 +408,7 @@ html, body {
 
 
 .container-carousel{
-  max-width: 80%;
+  max-width: 100%;
   padding-top: 3rem;
   padding-bottom: 5rem;
   margin: auto;
@@ -414,50 +418,49 @@ html, body {
 #text-carousel h1{
   text-align: center;
   font-weight:bolder;
-  font-size: 30px;
+  font-size: 40px ;
 }
 #text-carousel p{
   color: #8A8A8A;
   text-align: center;
-  font-size: 15px;
+  font-size: 16px;
 
 
 }
 /* Swiper */
 
 
-/* .swiper {
-  width: 100%;
+ .swiper {
+  width: 70vw;
   height: 100%;
 
-} */
+} 
 
 
 
 .swiper-slide {
   background-position: center;
   text-align: center;
-  width: 100%;
+  width: 80%;
   height: 100%;
   padding: 45px 30px !important;
-  
-
-  /* Center slide text vertically */
-
-
 }
 
 .swiper-slide img {
-  display: block;
+  /* display: block; */
+  align-items: center;
+  justify-content: center;
+
   max-height: 350px;
  /*  max-width: 100px; */
   transition: transform 100ms ease;
 }
 .active-slide img {
   transform: scale(1.2);
-  text-align: center;
+/*   text-align: center;
+  justify-content: center; */
 }
-/* Swiper -end */
+/* Swiper_END--Fredrik--*/
 
 
 
@@ -485,7 +488,7 @@ html, body {
 .text-stats h1{
   text-align: center;
   font-weight:bolder;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 
@@ -494,7 +497,7 @@ html, body {
   text-align: center;
   
   
-  font-size: 15px;
+  font-size: 16px;
 }
 
 /* .bg-img{
@@ -529,19 +532,104 @@ html, body {
 }
 
 
+
+
 /* Carousel -end - Fredrik */
 
 
 
 
 
+
+/* FOOTER - FREDRIK */
+
+#footer{
+  margin-top:4rem ;
+  position: relative;
+  background-image: url('img/footer/Rectangle\ 1915.png');
+  background-size: cover;
+  height: 250px;
+
+}
+#footer h1{
+
+  color: #FFF;
+  font-weight: bolder;
+  font-size: 41px;
+  display: flex;
+ padding-top:  2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer span{
+  color: var(--primary-yellow-color);
+}
+.foot-bg{
+  position: absolute;
+
+  top: 0%;
+}
+.foot-bg img{
+/*   background-position: center center; */
+  overflow:hidden;
+  width: 100vw;
+  height: 250px;
+  max-height: 100vw;
+
+  border-image-repeat: no-repeat;
+
+}
+
+
+.footer-nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px ;
+  list-style: none;
+}
+.footer-nav a{
+  color: white;
+  margin: 0 15px; 
+}
+
+
+#footer .social-media{
+
+  /* width: 100%;  */
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  
+}
+#footer .social-media i{
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgba(224, 255, 255, 0.185);
+  margin: 10px;
+  line-height: 1.9em;
+  
+}
+/* FOOTER_END--Fredrik */
+
+
+
   @media (min-width: 720px) {
     .container{
-        width: 720%;
+        width: 720px;
     }
     .header svg{
       display: block;
     }
+    .swiper {
+      width: 80vw;
   }
   
   @media (min-width: 905px) {
