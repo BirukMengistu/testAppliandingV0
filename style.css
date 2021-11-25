@@ -46,7 +46,10 @@ html, body {
 
 /* NAVBAR */
 
+<<<<<<< HEAD
+=======
 
+<<<<<<< HEAD
 .navbar {
      
     width: 100%;
@@ -325,6 +328,12 @@ html, body {
      .header-card h1{
        text-align: left;
      }
+=======
+      /*  <end of Nav css>
+       */
+     
+ 
+>>>>>>> navbar-dev
      
      .header-card p{
        text-align: left;
@@ -352,6 +361,7 @@ html, body {
   /* ANIMATION_END - Fredrik */
  
 
+<<<<<<< HEAD
   .header .heard-card{
       color: white;
       width:40%;
@@ -359,6 +369,60 @@ html, body {
   }
   .header svg{
     display: none;
+=======
+    .navbar-toggler {
+        display: none;
+      }
+      .collapse:not(.show) {
+        
+        display: block;
+      }
+      .navbar {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        bottom: 0;
+        left: 0;
+      }
+  /*    .container .navbar-nav {
+           width: 100%;
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           padding: 0 1rem;
+           margin: 0 0.6rem;  
+      }
+      .navbar::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width:100%;
+        height: 200%;
+        background: var(--primary-bluedark-color) url('./img/Group\ 4634@2x.png') ;
+        outline: transparent;
+        opacity: 95%;
+        background-repeat: no-repeat; 
+        background-size: 100%;
+        border-radius:12rem ;
+        transform:rotate(-22deg);
+       
+       }
+      .header-card h1{
+        text-align: left;
+      }
+      
+      .header-card p{
+        text-align: left;
+      }
+      
+      .header-card div{
+        text-align: left;
+      }
+         .header svg{
+            display: block;
+          } */
+          
+>>>>>>> navbar-dev
   }
   .btn-downloadnow{
     background-color: var(--primary-bluelight-color);
@@ -643,11 +707,16 @@ html, body {
         
         display: block;
       }
+<<<<<<< HEAD
       .navbar-nav {
         flex-direction: row;
          padding: 0.2rem 0.2rem;
          margin: 0 0.6rem;
       }
+=======
+   
+    
+>>>>>>> navbar-dev
       a {
         padding: 0 .5rem;
       }
@@ -660,7 +729,18 @@ html, body {
   }
  
   @media (min-width: 1200px) {
+<<<<<<< HEAD
     .container {
       max-width: 1140px;
     }
   }
+=======
+            .container {
+            max-width: 1140px;
+            }
+             
+          
+        }
+
+>>>>>>> contact-dev
+>>>>>>> navbar-dev
