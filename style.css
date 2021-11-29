@@ -82,21 +82,15 @@ html, body {
     margin-left: 5%;
   }
   
- 
-  
-  .navbar .header{
-    position: relative;
-    z-index: 1;
-    color: white;
+  .navbar .header {
+    width: 100%;
     display: flex;
-    width:100%;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 1rem;
-    
-}
+    justify-content: space-between;
+    align-content: center;
+    margin-left: 5%;
+  }
   .header-card{
-  
+    width: 80%;
     text-align: center;
     margin: 0 10%
   }
@@ -145,7 +139,16 @@ html, body {
       z-index: 1;
       margin: 0 auto;
         }
-     
+        .navbar .header{
+            position: relative;
+            z-index: 1;
+            color: white;
+            width:80%;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 1rem;
+            
+        }
         
   a {
     padding: 0 .5rem;
@@ -162,24 +165,17 @@ html, body {
  
       .header svg{
         display: none;
-        
         }
       .btn-box div{
-
-
-            align-items: center;
+          
             margin-bottom: 1rem;
         }
 
       .btn-downloadnow{
-        background-color: var(--primary-bluedark-color); 
+        background-color:  var(--primary-bluedark-color);
         color: white;
         border:1px solid white;
-        line-height: 1.5rem;
-        /* height: 40px; */
-
-
-    
+        line-height: 1.2rem;
       }
   
       .btn-watchvideo{
@@ -252,10 +248,9 @@ html, body {
   
   
   
- /* start contact section  */
+  
   #contactus {
     width: 100%;
-    height: 50vh;
    display: flex;
    flex-direction:column;
    justify-content: center;
@@ -265,6 +260,7 @@ html, body {
   
   #contactus .contact-header{
      width:50%; 
+    
     }
   .form{
     width:60%;
@@ -294,8 +290,6 @@ html, body {
      border: none;
      overflow: auto;
      outline: none;
-     font-size: small;
-     border-radius: 6px;
      }
     .form button{
       width:20%;
@@ -412,15 +406,12 @@ html, body {
 
 /* Section - Carousel - FREDRIK*/
 
-
 .container-carousel{
   max-width: 100%;
   padding-top: 3rem;
   padding-bottom: 5rem;
   margin: auto;
 }
-
-
 #text-carousel h1{
   text-align: center;
   font-weight:bolder;
@@ -430,20 +421,14 @@ html, body {
   color: #8A8A8A;
   text-align: center;
   font-size: 16px;
-
-
 }
-/* Swiper */
 
+/* Swiper */
 
  .swiper {
   width: 70vw;
   height: 100%;
-
 } 
-
-
-
 .swiper-slide {
   background-position: center;
   text-align: center;
@@ -451,25 +436,21 @@ html, body {
   height: 100%;
   padding: 45px 30px !important;
 }
-
 .swiper-slide img {
-  /* display: block; */
   align-items: center;
   justify-content: center;
-
   max-height: 350px;
- /*  max-width: 100px; */
   transition: transform 100ms ease;
 }
 .active-slide img {
   transform: scale(1.2);
-/*   text-align: center;
-  justify-content: center; */
+
 }
+
 /* Swiper_END--Fredrik--*/
 
 
-
+/* Statistics -- Start -- Fredrik Lundkvist */
 
 .stats{
   display: block;
@@ -487,7 +468,6 @@ html, body {
 .text-stats{
   
   justify-content: space-between;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -501,8 +481,6 @@ html, body {
 .text-stats p{
   color: #8A8A8A;
   text-align: center;
-  
-  
   font-size: 16px;
 }
 
@@ -514,7 +492,6 @@ html, body {
 } */
 .grid-container{
   display: grid;
-  
   grid-template-columns: 100px  100px  100px  100px;
   grid-gap: 10%;
   align-items: center;
@@ -531,6 +508,7 @@ html, body {
 }
 
 .grid-container p{
+  justify-content: center;
   font-size: 20px;
   text-align: center;
   color: #333333;
