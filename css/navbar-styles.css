@@ -181,6 +181,7 @@ a:hover{
             margin-right: 0.5rem;
             outline: 2px double var(--primary-yellow-color);
             outline-offset: 2px;
+            z-index: 2;
         }
   
       .header-svg{

@@ -1,0 +1,77 @@
+/* FOOTER - FREDRIK */
+
+#footer{
+    margin-top:4rem ;
+    position: relative;
+    background-image: url('img/footer/Rectangle\ 1915.png');
+    background-size: cover;
+    height: 250px;
+  
+  }
+  #footer h1{
+  
+    color: #FFF;
+    font-weight: bolder;
+    font-size: 41px;
+    display: flex;
+   padding-top:  2.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #footer span{
+    color: var(--primary-yellow-color);
+  }
+  .foot-bg{
+    position: absolute;
+  
+    top: 0%;
+  }
+  .foot-bg img{
+  /*   background-position: center center; */
+    overflow:hidden;
+    width: 100vw;
+    height: 250px;
+    max-height: 100vw;
+  
+    border-image-repeat: no-repeat;
+  
+  }
+  
+  
+  .footer-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px ;
+    list-style: none;
+  }
+  .footer-nav a{
+    color: white;
+    margin: 0 15px; 
+  }
+  
+  
+  #footer .social-media{
+  
+    /* width: 100%;  */
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    
+  }
+  #footer .social-media i{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgba(224, 255, 255, 0.185);
+    margin: 10px;
+    line-height: 1.9em;
+    
+  }
+  /* FOOTER_END--Fredrik */
