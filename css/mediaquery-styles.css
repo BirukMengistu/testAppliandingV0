@@ -1,3 +1,15 @@
+@media (min-width: 720px) {
+  .container{
+      width: 720px;
+  }
+  .header svg{
+    display: block;
+  }
+  .swiper {
+    width: 80vw;
+}
+
+
 @media (min-width: 768px) {
     .container{
         width: 768px;
@@ -52,16 +64,7 @@
           
   }
    
-   @keyframes ripple {
-     from {
-       transform: scale(0);
-       opacity: 1;
-     }
-     to{
-       transform: scale(1);
-       opacity: 0;
-     }
-   }
+
   
  
   
