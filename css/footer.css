@@ -6,6 +6,7 @@
     background-image: url('../img/footer/Rectangle\ 1915.png');
     background-size: cover;
     height: 250px;
+    z-index: 3;
   
   }
   #footer h1{
@@ -24,8 +25,8 @@
   }
   .foot-bg{
     position: absolute;
-  
     top: 0%;
+    z-index: -1;
   }
   .foot-bg img{
   /*   background-position: center center; */
@@ -33,9 +34,7 @@
     width: 100vw;
     height: 250px;
     max-height: 100vw;
-  
     border-image-repeat: no-repeat;
-  
   }
   
   
@@ -45,16 +44,16 @@
     justify-content: center;
     margin: 20px ;
     list-style: none;
+    z-index: 1;
  
   }
   .footer-nav a{
     color: white;
     margin: 0 15px; 
-    cursor: pointer;
   }
 
-  .footer-nav a:hover{
-    color: yellow;
+  a:hover{
+    color:var(--primary-yellow-color); 
     
   }
   
@@ -81,5 +80,8 @@
     margin: 10px;
     line-height: 1.9em;
     
+  }
+  #footer .social-media i:hover{
+    background-color: #ffbb00b4;
   }
   /* FOOTER_END--Fredrik */
