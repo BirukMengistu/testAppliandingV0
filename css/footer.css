@@ -3,7 +3,7 @@
 #footer{
     margin-top:4rem ;
     position: relative;
-    background-image: url('img/footer/Rectangle\ 1915.png');
+    background-image: url('../img/footer/Rectangle\ 1915.png');
     background-size: cover;
     height: 250px;
   
@@ -45,10 +45,17 @@
     justify-content: center;
     margin: 20px ;
     list-style: none;
+ 
   }
   .footer-nav a{
     color: white;
     margin: 0 15px; 
+    cursor: pointer;
+  }
+
+  .footer-nav a:hover{
+    color: yellow;
+    
   }
   
   
@@ -60,6 +67,7 @@
     align-items: center;
     justify-content: center;
     color: #fff;
+    cursor: pointer;
     
   }
   #footer .social-media i{
